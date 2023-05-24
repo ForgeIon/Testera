@@ -1,0 +1,120 @@
+{
+  "mod_elements": [
+    {
+      "name": "Tes",
+      "type": "rangeditem",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tes",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/testera/item/TesItem.java",
+          "src/main/resources/assets/testera/models/item/tes.json",
+          "src/main/java/net/mcreator/testera/entity/TesEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "Jetpack",
+      "type": "armor",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jetpack",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/testera/item/JetpackItem.java",
+          "src/main/resources/assets/testera/models/item/jetpack_helmet.json",
+          "src/main/resources/assets/testera/models/item/jetpack_chestplate.json"
+        ]
+      },
+      "path": "~/Jetpack"
+    },
+    {
+      "name": "JetpackCode",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jetpack_code",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/testera/procedures/JetpackCodeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Jetpack"
+    },
+    {
+      "name": "FallDamageCancel",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fall_damage_cancel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/testera/procedures/FallDamageCancelProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Jetpack"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "JetpackOn",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    }
+  ],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.testera.jetpack_helmet": "Tophat",
+      "item.testera.jetpack_boots": "Jetpack Boots",
+      "item.testera.jetpack_chestplate": "Jetpack Body",
+      "item.testera.tes": "Tes",
+      "item.testera.jetpack_leggings": "Jetpack Leggings"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Jetpack",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "testera",
+    "modName": "Testera",
+    "version": "1.0.0",
+    "author": "Forge, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.19.2",
+    "modElementsPackage": "net.mcreator.testera",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300110610
+}
